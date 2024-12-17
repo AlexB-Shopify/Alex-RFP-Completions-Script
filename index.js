@@ -46,7 +46,7 @@ function callOpenAI(prompt) {
   var apiKey = scriptProps.getProperty('OPENAI_API_KEY');
   var apiUrl = "https://openai-proxy.shopify.ai/v2/openai/v1/chat/completions";
   var payload = {
-    "model": "openai:gpt-4o-2024-08-06",
+    "model": "gpt-4o-2024-08-06",
     "messages": [{
       "role": "user",
       "content": prompt
