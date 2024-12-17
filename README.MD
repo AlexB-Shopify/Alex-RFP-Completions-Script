@@ -23,7 +23,7 @@ By using this script, you can generate responses based on various input types (B
 2. Save the project with a name of your choice.
 
 ### Step 4: Get An API Key
-1. Head over to our Open AI Proxy site: https://openai-proxy.shopify.io/
+1. Head over to our Open AI Proxy site
 2. Click on "Personal Access" from the menu.
 3. Ensure OpenAI is selected.
 4. Copy the key in the box above.
@@ -36,6 +36,20 @@ By using this script, you can generate responses based on various input types (B
 3. Add a new property:
    - **Key**: `OPENAI_API_KEY`
    - **Value**: Your OpenAI Proxy API key (obtained above).
+
+#### Step 5.1: Add API URL
+On line 47, add the link to our Open AI API Proxy Endpoint as the variable apiURL:
+```
+function callOpenAI(prompt) {
+  var apiKey = scriptProps.getProperty('OPENAI_API_KEY');
+  var apiUrl = "";
+  var payload = {
+    "model": "gpt-4o-2024-08-06",
+    "messages": [{
+      "role": "user",
+      "content": prompt
+    }],
+```
 
 ### Step 6: Authorize the Script
 
