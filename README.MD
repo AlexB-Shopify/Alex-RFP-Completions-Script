@@ -70,7 +70,9 @@ If you have a question in cell A1 and want a short response regarding a specific
 ```
 
 ## Roadmap
-I am currently working with some of our Vaultbot engineers to improve it's API and the customization of experts, we will then add additional parameters to our script and point requests at Vaultbot for embedded answers. This will focus the context window on up-to-date answers and fewer hallucinations.
+1. I am currently working with some of our Vaultbot engineers to improve it's API and the customization of experts, we will then add additional parameters to our script and point requests at Vaultbot for embedded answers. This will focus the context window on up-to-date answers and fewer hallucinations.
+2. Add support for additional parameters like category, to give the LLM additional context on the type of answer to write (i.e. storefront, payment, search, merchandising, security)
+3. Package into a Google Workspace App instead of loading manually into Apps Script
 
 ## Troubleshooting
 
