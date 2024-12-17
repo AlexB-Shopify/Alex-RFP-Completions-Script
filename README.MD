@@ -50,6 +50,7 @@ function callOpenAI(prompt) {
       "content": prompt
     }],
 ```
+Format is https://ROOT/v1/chat/completions
 
 ### Step 6: Authorize the Script
 
