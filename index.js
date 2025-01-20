@@ -73,7 +73,7 @@ var scriptProps = PropertiesService.getScriptProperties()
 
 function callOpenAI(prompt) {
   var apiKey = scriptProps.getProperty('OPENAI_API_KEY');
-  var apiUrl = "https://proxy.shopify.ai/v1/chat/completions";
+  var apiUrl = "[INSERT API URL HERE]";
   var payload = {
     "model": "gpt-4o-2024-08-06",
     "messages": [{
